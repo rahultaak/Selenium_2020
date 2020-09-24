@@ -21,13 +21,16 @@ public class FB_SIGNUP {
 		Thread.sleep(3000);
 	   
 	  WebElement first = driver.findElement(By.cssSelector("input#u_1_b"));
-	  first.sendKeys("Rahul");
+	  first.sendKeys("vicky");
 	  
 	  WebElement last = driver.findElement(By.name("lastname"));
 	  last.sendKeys("verma");
 	  
 	  WebElement mail	= driver.findElement(By.cssSelector("input#u_1_g"));
-	  mail.sendKeys("9911224557");
+	  mail.sendKeys("rahul880@gmail.com");
+	  
+	  WebElement remail	= driver.findElement(By.cssSelector("input[aria-label='Re-enter email address']"));
+	  remail.sendKeys("rahul880@gmail.com");
  
 	  WebElement pass = driver.findElement(By.name("reg_passwd__"));
 	  pass.sendKeys("rahul@8800");
